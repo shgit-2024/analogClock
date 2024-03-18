@@ -131,18 +131,18 @@
 				context.textBaseline = "middle";
 				labelText = i;
 				if(i == 13) labelText = "᱑";
-				else if(i == 14) labelText = "᱒";
-				else if(i == 15) labelText = "᱓";
+				elseif(i == 14) labelText = "᱒";
+				elseif(i == 15) labelText = "᱓";
 				
-				else if(i == 4) labelText = "᱔";
-				else if(i == 5) labelText = "᱕";
-				else if(i == 6) labelText = "᱖";
-				else if(i == 7) labelText = "᱗";
-				else if(i == 8) labelText = "᱘";
-				else if(i == 9) labelText = "᱙";
-				else if(i == 10) labelText = "᱑᱐";
-				else if(i == 11) labelText = "᱑᱑";
-				else if(i == 12) labelText = "᱑᱒";
+				elseif(i == 4) labelText = "᱔";
+				elseif(i == 5) labelText = "᱕";
+				elseif(i == 6) labelText = "᱖";
+				elseif(i == 7) labelText = "᱗";
+				elseif(i == 8) labelText = "᱘";
+				elseif(i == 9) labelText = "᱙";
+				elseif(i == 10) labelText = "᱑᱐";
+				elseif(i == 11) labelText = "᱑᱑";
+				elseif(i == 12) labelText = "᱑᱒";
 				context.fillText(labelText, x1, y1);
 			}
 			//draw digital clock
@@ -177,9 +177,9 @@
 			thetaHours = hours * 30;
 			//moves the hours hand more 6 degree of completion of every 12 minutes
 			if(minutes >= 12 && minutes < 24) thetaHours = thetaHours + 6;
-			else if(minutes >= 24 && minutes < 36) thetaHours = thetaHours + 12;
-			else if(minutes >= 36 && minutes < 48) thetaHours = thetaHours + 18;
-			else if(minutes >= 48 && minutes < 60) thetaHours = thetaHours + 24;
+			elseif(minutes >= 24 && minutes < 36) thetaHours = thetaHours + 12;
+			elseif(minutes >= 36 && minutes < 48) thetaHours = thetaHours + 18;
+			elseif(minutes >= 48 && minutes < 60) thetaHours = thetaHours + 24;
 			context.beginPath();
 			context.moveTo(x1, y1);
 			context.lineTo(x1 + rH * Math.cos(Math.PI * thetaHours / 180.0), y1 + rH * Math.sin(Math.PI * thetaHours / 180.0));
